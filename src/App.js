@@ -1,12 +1,11 @@
 import './App.css';
 import { Route } from "react-router-dom";
-
+import { connect } from "react-redux";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
 
-import { data } from "./data";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <h1>
@@ -23,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default (App);
