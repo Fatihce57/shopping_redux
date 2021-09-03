@@ -1,6 +1,5 @@
 import './App.css';
 import { Route } from "react-router-dom";
-import { connect } from "react-redux";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
 
