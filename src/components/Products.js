@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { sepeteEkle } from '../actions'
+import { sepeteEkle } from '../actions/action'
 
 const Products = (props) => {
     console.log("Cart:", props.cart)
