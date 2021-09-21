@@ -1,4 +1,4 @@
-import { data } from '../data';
+import { data } from '../../data/data';
 
 const INITIAL_STATE = {
     bookList: data,
