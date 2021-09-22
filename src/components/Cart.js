@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-
-
 const Cart = (props) => {
     const totalPrice = props.cart.reduce((total, item) => (total += item.price), 0);
 
