@@ -1,11 +1,14 @@
+@import 'layout';
+
 .App {
-  font-family: sans-serif;
-}
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $secondColor;
+ }
 
 .header{
   font-size: 22px;
-  background: #222;
-  color: white;
+  background-color: $bgColor;
+  color: $secondLetterColor;
   padding: 3px;
   border-radius: 5px;
   display: flex;
