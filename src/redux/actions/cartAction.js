@@ -1,4 +1,4 @@
-export const sepeteEkle = book => {
-    return { type: 'SEPETE_EKLE', payload: book }
+export const addToCart = book => {
+    return { type: 'ADD_TO_CART', payload: book }
 };
 
