@@ -1,4 +1,4 @@
-import './App.css';
+import './scss/App.scss';
 import { Route } from "react-router-dom";
 import Products from "./components/Products";
 import Cart from "./components/Cart";

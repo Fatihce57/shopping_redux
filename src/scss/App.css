@@ -1,0 +1,21 @@
+.App {
+  font-family: sans-serif;
+}
+
+.header {
+  font-size: 22px;
+  background: #222;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=App.css.map */

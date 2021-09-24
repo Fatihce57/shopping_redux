@@ -1,0 +1,26 @@
+.book-cart-nav {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: 1px solid #ccc;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.book-picture {
+  width: 150px;
+  margin: 0 10px 0 0;
+}
+/*# sourceMappingURL=Products.css.map */

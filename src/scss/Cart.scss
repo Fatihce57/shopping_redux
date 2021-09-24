@@ -1,0 +1,20 @@
+
+.book-cart-nav {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .book {
+    display: flex;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid #ccc;
+    transition: all 0.5s;
+  }
+  
+  .book-picture {
+    width: 150px;
+    margin: 0 10px 0 0;
+  }
+  
