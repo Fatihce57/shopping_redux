@@ -7,7 +7,7 @@ import Cart from "./components/Cart";
 function App(props) {
   return (
     <div className="App">
-      <h1>
+      <h1 className="header">
         Book Shopping Cart
       </h1>
       <Route exact path="/" component={Products} />
