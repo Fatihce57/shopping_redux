@@ -1,5 +1,4 @@
-@use 'variables';
-@use 'layout';
+@import 'layout';
 
 .book-cart-nav {
     font-size: 18px;
@@ -11,7 +10,7 @@
     display: flex;
     padding: 10px;
     margin: 0 0 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid $borderColor;
     transition: all 0.5s;
   }
   
