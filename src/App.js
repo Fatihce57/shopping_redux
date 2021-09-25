@@ -8,7 +8,7 @@ function App(props) {
   return (
     <div className="App">
       <h1 className="header">
-        Book Shopping Cart
+        Book Shopping
       </h1>
       <Route exact path="/" component={Products} />
       <Route path="/cart" component={Cart} />

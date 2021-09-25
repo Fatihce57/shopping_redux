@@ -16,8 +16,10 @@ const Products = (props) => {
             <span> Book List </span> <Link to="/cart">My Cart</Link>
           </Col>
         </Row>
+      </Container>
+      <Container>
         <Row>
-          <Col sm={12} md={6} lg={3}>
+          <Col sm={12} md={6} lg={4}>
             {props.bookList.map((book) => (
               <div className="book" key={book.id}>
                 <img

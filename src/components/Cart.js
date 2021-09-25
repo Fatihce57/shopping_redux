@@ -19,9 +19,10 @@ const Cart = (props) => {
             <Link to="/">Book List</Link> <span>My Cart</span>
           </Col>
         </Row>
-
+      </Container>
+      <Container>
         <Row>
-          <Col sm={12} md={6} lg={3}>
+          <Col sm={12} md={6} lg={4}>
             {props.cart.map((book) => (
               <div className="book">
                 <img
