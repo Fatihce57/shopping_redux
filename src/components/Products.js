@@ -7,7 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Row, Col, Container } from 'react-bootstrap'
 
 const Products = (props) => {
-  // console.log("Cart:", props.cart)
+
+  const {addToCart } = props;
+
   return (
     <div>
       <Container>
@@ -20,17 +22,17 @@ const Products = (props) => {
       <Container>
         <Row>
           <Col sm={12} md={6} lg={4}>
-            {props.bookList.map((book) => (
-              <div className="book" key={book.id}>
+            {props.bookList.map((productId) => (
+              <div className="book" key={productId.id}>
                 <img
                   className="book-picture"
-                  src={book.image}
-                  alt={book.name}
+                  src={productId.image}
+                  alt={productId.name}
                 />
                 <div>
-                  <h4> {book.name} </h4> <p> Author: {book.author} </p>
-                  <p> Price: &#8378; {book.price}</p>
-                  <button onClick={() => props.addToCart(book)}>
+                  <h4> {productId.name} </h4> <p> Author: {productId.author} </p>
+                  <p> Price: &#8378; {productId.price}</p>
+                  <button onClick={() => addToCart(productId)}>
                     Add to Cart
                   </button>
                 </div>

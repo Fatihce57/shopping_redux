@@ -2,10 +2,14 @@ import React from 'react'
 import '../scss/Cart.scss'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+import { removeCart } from '../redux/actions/cartAction'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Row, Col, Container } from 'react-bootstrap'
 
 const Cart = (props) => {
+
+  const { removeCart } = props;
+
   const totalPrice = props.cart.reduce(
     (total, item) => (total += item.price),
     0
@@ -23,19 +27,19 @@ const Cart = (props) => {
       <Container>
         <Row>
           <Col sm={12} md={6} lg={4}>
-            {props.cart.map((book) => (
-              <div className="book">
+            {props.cart.map((productId) => (
+              <div className="book" key={productId.id}>
                 <img
                   className="book-picture"
-                  src={book.image}
-                  alt={book.name}
+                  src={productId.image}
+                  alt={productId.name}
                 />
                 <div>
-                  <h4>{book.name}</h4>
-                  <p>Author: {book.author}</p>
-                  <p>Price: &#8378;{book.price}</p>
+                  <h4>{productId.name}</h4>
+                  <p>Author: {productId.author}</p>
+                  <p>Price: &#8378;{productId.price}</p>
                   <button>-</button>
-                  <button>Remove</button>
+                  <button onClick={() => removeCart(productId)} >Remove</button>
                   <button>+</button>
                 </div>
               </div>
@@ -54,4 +58,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Cart)
+export default connect(mapStateToProps, { removeCart })(Cart)

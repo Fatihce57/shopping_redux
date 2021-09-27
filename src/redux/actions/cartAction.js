@@ -1,9 +1,9 @@
-export const addToCart = book => {
-    return { type: 'ADD_TO_CART', payload: book }
+export const addToCart = productId => {
+    return { type: 'ADD_TO_CART', payload: productId }
 };
 
-export const removeFromCart = cartId => {
-    return { type: 'REMOVE_FROM_CART', payload: cartId }
+export const removeCart = productId => {
+    return { type: 'REMOVE_CART', payload: productId }
 };
 
 
