@@ -8,7 +8,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 
 const Products = (props) => {
 
-  const {addToCart } = props;
+  const { addToCart } = props;
 
   return (
     <div>

@@ -22,6 +22,7 @@ const Cart = (props) => {
           <Col className="book-cart-nav">
             <Link to="/">Book List</Link> <span>My Cart</span>
           </Col>
+          <h3>Total: &#8378;{totalPrice.toFixed(2)}</h3>
         </Row>
       </Container>
       <Container>
